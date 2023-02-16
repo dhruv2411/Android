@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_custom_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dipmalyasen.sample1.customDialog"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Toss won by?"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:id="@+id/toss" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1st to Bat"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:id="@+id/bat1" />
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/button_rounded"/>
+
+
+</LinearLayout>

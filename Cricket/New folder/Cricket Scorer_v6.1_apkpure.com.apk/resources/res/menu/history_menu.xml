@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/viewbatsmanhistory" android:title="Batsman Scorecard"/>
+    <item android:id="@+id/viewbowlershistory" android:title="Bowlers Scorecard"/>
+    <item android:id="@+id/viewovershistory" android:title="Overs Scorecard"/>
+    <item android:id="@+id/viewfallofwickets" android:title="Fall of Wickets"/>
+    <item android:id="@+id/viewPartenerships" android:title="Partenerships"/>
+    <item android:id="@+id/finishInnings" android:title="Finish/Declare Innings"/>
+    <item android:id="@+id/viewMatchDetails" android:title="Match Details"/>
+</menu>

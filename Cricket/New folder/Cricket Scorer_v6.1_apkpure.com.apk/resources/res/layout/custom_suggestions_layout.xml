@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/optionsbatname" android:background="@drawable/options_button_styling" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Batsman name" android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@mipmap/share" android:id="@+id/export_tournament_to_pdf" android:title="Export to PDF"/>
+    <item android:icon="@mipmap/share" android:id="@+id/share_tournament_pdf" android:title="Share PDF"/>
+    <item android:icon="@mipmap/share" android:id="@+id/share_image" android:title="Share IMAGE"/>
+    <item android:icon="@mipmap/share" android:id="@+id/bat_of_the_tournament" android:title="Batsman of the Tournament"/>
+    <item android:icon="@mipmap/share" android:id="@+id/bowl_of_the_tournament" android:title="Bowler of the Tournament"/>
+</menu>

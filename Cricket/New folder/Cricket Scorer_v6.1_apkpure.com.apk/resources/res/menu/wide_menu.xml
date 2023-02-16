@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/wd0" android:title="0wd"/>
+    <item android:id="@+id/wd1" android:title="1wd"/>
+    <item android:id="@+id/wd2" android:title="2wd"/>
+    <item android:id="@+id/wd3" android:title="3wd"/>
+    <item android:id="@+id/wd4" android:title="4wd"/>
+    <item android:id="@+id/wd5" android:title="5wd"/>
+    <item android:id="@+id/wd6" android:title="6wd"/>
+    <item android:id="@+id/wd7" android:title="7wd"/>
+    <item android:id="@+id/wide_Wicket" android:title="Wd+Wkt"/>
+</menu>

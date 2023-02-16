@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_fall_of_wickets" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@style/TextAppearance.Material.Title" android:textSize="35sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:background="@color/tealdark" android:layout_width="match_parent" android:layout_height="50dp" android:text="Fall of Wickets"/>
+    <LinearLayout android:background="@color/tealdark" android:layout_width="match_parent" android:layout_height="25dp"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/tealdark" android:layout_width="match_parent" android:layout_height="60dp">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="30dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="No" android:fontFamily="sans-serif-condensed"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="40dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="Runs" android:fontFamily="sans-serif-condensed"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="40dp" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="Over" android:fontFamily="sans-serif-condensed"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="Batsman" android:layout_weight="1" android:fontFamily="sans-serif-condensed"/>
+            <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="Bowler" android:layout_weight="1" android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@+id/fallofwicketslistview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

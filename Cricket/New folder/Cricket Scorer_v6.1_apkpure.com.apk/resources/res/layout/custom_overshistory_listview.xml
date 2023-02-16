@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background" android:layout_width="match_parent" android:layout_height="40dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/linearlayoutover" android:layout_width="match_parent" android:layout_height="40dp" android:weightSum="10" android:layout_above="@+id/bowlerslistview" android:layout_below="@+id/edbowlerinput">
+        <TextView android:textSize="16sp" android:textStyle="normal|bold|italic" android:textColor="@android:color/black" android:id="@+id/cvtvoverno" android:layout_width="25dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="No"/>
+        <TextView android:textSize="16sp" android:textStyle="normal|bold|italic" android:textColor="@android:color/black" android:id="@+id/cvtvbowlername" android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Bowler" android:inputType="textCapWords"/>
+        <TextView android:textSize="16sp" android:textStyle="normal|bold|italic" android:textColor="@android:color/black" android:id="@+id/cvtvscores" android:layout_width="25dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="R"/>
+        <TextView android:textSize="16sp" android:textStyle="normal|bold|italic" android:textColor="@android:color/black" android:id="@+id/cvtvwickets" android:layout_width="20dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="W"/>
+        <TextView android:textSize="16sp" android:textStyle="normal|bold|italic" android:textColor="@android:color/black" android:ellipsize="marquee" android:id="@+id/cvtvoverdetails" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:scrollHorizontally="true" android:marqueeRepeatLimit="2"/>
+    </LinearLayout>
+</RelativeLayout>

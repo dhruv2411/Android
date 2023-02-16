@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@color/background" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textColor="@android:color/black" android:id="@+id/tv_playing_xi_player_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Player Name" android:layout_weight="1"/>
+    <CheckBox android:id="@+id/cb_playing_xi" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

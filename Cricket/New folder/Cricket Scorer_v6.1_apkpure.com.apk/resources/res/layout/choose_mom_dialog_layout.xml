@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="25sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:background="@color/tealdark" android:layout_width="match_parent" android:layout_height="50dp" android:text="Choose Man of the Match"/>
+    <TextView android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Tap on any player to choose it as Man of the Match" android:fontFamily="sans-serif-condensed"/>
+    <ListView android:id="@+id/mom_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp"/>
+</LinearLayout>

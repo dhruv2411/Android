@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/custom_botton_border" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="25sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/batsman_ranking_dialog_title" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BATTING STATS" style="@style/TextAppearance.AppCompat.Title"/>
+        <TextView android:textColor="@android:color/black" android:layout_gravity="center" android:id="@+id/tournament_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/profile_image" android:layout_width="80dp" android:layout_height="80dp" android:layout_margin="10dp"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="25sp" android:textStyle="bold" android:textColor="@color/tealdark" android:gravity="center_vertical" android:id="@+id/tvbatsmanname" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Batsman Name" android:fontFamily="sans-serif-condensed"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:id="@+id/tv_team_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="vs Pakistan"/>
+                <Spinner android:id="@+id/sp_team_names" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/tv_bat_ranking" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ranking#"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="10dp">
+            <Button android:layout_gravity="center" android:id="@+id/b_share" android:background="@drawable/ic_share_teal_dark" android:layout_width="30dp" android:layout_height="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/stats_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/custom_right_botton_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="POINTS" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:id="@+id/tv_bat_points" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/custom_right_botton_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="RUNS" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:id="@+id/tv_bat_runs" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/custom_botton_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="INNINGS" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:id="@+id/tv_bat_matches" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="0"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/custom_right_botton_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="AVERAGE" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_bat_average" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/custom_right_botton_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="STRIKE RATE" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:id="@+id/tv_bat_sr" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/custom_botton_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="BEST" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:id="@+id/tv_bat_best" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="0"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"> &gt;\10
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/custom_right_botton_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="THIRTIES" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:id="@+id/tvbatthirties" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/custom_right_botton_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="FIFTIES" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:id="@+id/tvbatfifties" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/custom_botton_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="HUNDREDS" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:id="@+id/tvbathundreds" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="0"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp"> &gt;\10
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/custom_border_right" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="NOT OUTS" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:id="@+id/tvbatnotOut" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/custom_border_right" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="BOUNDARIES" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:id="@+id/tvbatfours" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="SIXES" android:alpha="0.6" android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/tealdark" android:gravity="center" android:id="@+id/tvbatsixes" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CATCHES" android:fontFamily="sans-serif-condensed"/>
+                    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="30sp" android:textColor="@color/tealdark" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_bat_catches" android:layout_width="match_parent" android:layout_height="match_parent" android:text="0"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

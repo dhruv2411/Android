@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_stats_heading_top" style="@style/StatsHeadingStyle">
+    <android.support.v7.widget.RecyclerView android:id="@+id/tournament_stats_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</android.support.constraint.ConstraintLayout>

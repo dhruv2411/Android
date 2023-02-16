@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/buttonstyling_selector" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+        <TextView android:textAppearance="@style/TextAppearance.Material.Title" android:textSize="15sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tvtournament" android:background="@color/tealdark" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tournament Name" android:textAllCaps="true"/>
+        <TextView android:textAppearance="@style/TextAppearance.Material.Title" android:textSize="13sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tvtournamentStage" android:background="@color/teal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tournament Name" android:textAllCaps="true"/>
+        <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textColor="@android:color/black" android:id="@+id/tvvenueanddate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Venue and Date" android:textAllCaps="true"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17sp" android:textColor="@android:color/black" android:id="@+id/team1_name" android:layout_width="160dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Team Name" android:maxLines="1" android:textAllCaps="true"/>
+                <TextView android:textSize="17sp" android:textColor="@android:color/black" android:id="@+id/team1score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="0/0"/>
+                <TextView android:textSize="14sp" android:textColor="@android:color/black" android:id="@+id/team1overs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="(0.0)" android:maxLines="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17sp" android:textColor="@android:color/black" android:id="@+id/team2_name" android:layout_width="160dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Team Name" android:maxLines="1" android:textAllCaps="true"/>
+                <TextView android:textSize="17sp" android:textColor="@android:color/black" android:id="@+id/team2score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="0/0"/>
+                <TextView android:textSize="14sp" android:textColor="@android:color/black" android:id="@+id/team2overs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="(0.0)" android:maxLines="1"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tvToss" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Team A won the toss and elfected to bat first" android:textAllCaps="true" android:fontFamily="sans-serif-condensed"/>
+            <LinearLayout android:orientation="horizontal" android:background="@color/background_dark" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@android:color/black" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/match_result" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Result" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="2" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/momLayout" android:background="@color/teal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/mom" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Man of the Match:" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="2" android:textAllCaps="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

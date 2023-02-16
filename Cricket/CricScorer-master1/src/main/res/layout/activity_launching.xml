@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_launching"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dipmalyasen.sample1.launching"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/eden">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical">
+
+            <Button
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/button_rounded"
+                android:text="@string/button_1"
+                android:id="@+id/start_match" />
+            <Button
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_rounded"
+                android:text="@string/button_2"
+                android:id="@+id/view_stat" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

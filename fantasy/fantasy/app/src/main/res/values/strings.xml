@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">fantasy</string>
+    <string name="_1st_odi">1st ODI</string>
+    <string name="_2nd_odi">2nd ODI</string>
+    <string name="_3rd_odi">3rd ODI</string>
+    <string name="england_jason_roy_jonny_bairstow_dawid_malan_jos_buttler_c_w_ben_stokes_liam_livingstone_moeen_ali_sam_curran_reece_topley_adil_rashid_mark_wood"><![CDATA[England: Jason Roy, Jonny Bairstow, Dawid Malan, Jos Buttler(c&w), Ben Stokes, Liam Livingstone, Moeen Ali, Sam Curran, Reece Topley, Adil Rashid, Mark Wood.]]></string>
+</resources>

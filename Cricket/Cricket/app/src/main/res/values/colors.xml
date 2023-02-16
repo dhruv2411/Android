@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#039af4</color>
+    <color name="darkerPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#0277BD</color>
+    <color name="colorAccent">#01579B</color>
+    <color name="lightButton">#E1F5FE</color>
+    <color name="lighterButton">#B3E5FC</color>
+    <color name="lightPanel">#80D8FF</color>
+    <color name="darkButton">#40C4FF</color>
+    <color name="other1">#81D4FA</color>
+    <color name="black">#000</color>
+</resources>

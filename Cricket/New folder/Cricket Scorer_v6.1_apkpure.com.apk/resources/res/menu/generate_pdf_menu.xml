@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/generate_pdf" android:title="Export to PDF"/>
+    <item android:icon="@mipmap/share" android:id="@+id/share_pdf" android:title="Share as PDF"/>
+    <item android:icon="@mipmap/share" android:id="@+id/share_image" android:title="Share IMAGE"/>
+    <item android:icon="@mipmap/share" android:id="@+id/share_match" android:title="Share this Match"/>
+    <item android:id="@+id/view_match_summary" android:title="Share Match Summary"/>
+    <item android:id="@+id/delete_match" android:title="Delete This Match"/>
+    <item android:id="@+id/update_match_result" android:title="Update Match Result"/>
+    <item android:id="@+id/view_motm" android:title="View Man of the Match"/>
+</menu>

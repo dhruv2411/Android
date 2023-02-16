@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="3dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/batsman_ranking_main_layout" android:background="@color/white" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_bat_ranking" android:layout_width="40dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="999"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_gravity="left" android:id="@+id/batsman_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Batsman Name" android:maxLines="1"/>
+            <TextView android:textSize="15sp" android:layout_gravity="left" android:id="@+id/tv_team_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="TeamName" android:maxLines="1" android:fontFamily="sans-serif-condensed"/>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="10dp">
+                <TextView android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pts: " android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Runs: " android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textStyle="bold" android:textColor="@color/tealdark" android:id="@+id/tv_bat_runs" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mts: " android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textStyle="bold" android:textColor="@color/tealdark" android:id="@+id/tv_bat_matches" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp">
+                <TextView android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Avg: " android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textStyle="bold" android:textColor="@color/tealdark" android:id="@+id/tv_bat_average" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SR: " android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textStyle="bold" android:textColor="@color/tealdark" android:id="@+id/tv_bat_sr" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Best: " android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textStyle="bold" android:textColor="@color/tealdark" android:id="@+id/tv_bat_best" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@+id/tv_bat_points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="34" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

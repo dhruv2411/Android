@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/your_team_batting" android:title="View Your Team Batting"/>
+    <item android:id="@+id/opp_team_bowling" android:title="View Opponent Team Bowling"/>
+    <item android:id="@+id/your_team_bowling" android:title="View Your Team Bowling"/>
+    <item android:id="@+id/opp_team_batting" android:title="View Opponent Team Batting"/>
+    <item android:id="@+id/update_result" android:title="Update Result"/>
+    <item android:id="@+id/delete_match" android:title="Delete This match"/>
+</menu>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="137" android:versionName="6.1" package="apps.shehryar.com.cricketscroingapp" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="apps.shehryar.com.cricketscroingapp.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="apps.shehryar.com.cricketscroingapp.permission.C2D_MESSAGE"/>
+    <application android:theme="@style/AppTheme" android:label="Cricket Scorer" android:icon="@drawable/icon" android:name="apps.shehryar.com.cricketscroingappPro.MyApplication" android:allowBackup="true" android:largeHeap="true" android:supportsRtl="true" android:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+        <meta-data android:name="io.fabric.ApiKey" android:value="d0bbfdbc29c9a189fb76a7dbb5808897ad0e7a09"/>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.CricketScorer.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.FirstPage" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.srl"/>
+                <data android:host="*"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.OverHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Match.Previous_Match_Result" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.AndroidDatabaseManager"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Match.MatchDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.PlayersInputActivity" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Batsman.BatsmanHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Batsman.BatsmanDetailHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.After_Innings_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Match.Match_Result_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Bowler.BowlersHisotryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Match.PreviousMatchesListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.TestActivty" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.MainActivity_Test" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.FallOfWicketsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Team.YourTeamDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Team.YourTeamStats" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Batsman.BatsmanDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Bowler.BowlerDetailsActiivty" android:screenOrientation="portrait">
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="file"/>
+            <data android:mimeType="*/*"/>
+            <data android:pathPrefix="/.*\\.srl"/>
+        </activity>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Team.OtherTeamPlayersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.ManageTeamsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Team.Other_Team_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.ResumeMatchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.SplashScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Match.Tournament_Matches" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.BackupRestore.BackupRestoreActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Partenership.PartenershipsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Ranking.BatsmenRankingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Ranking.BowlersRankingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="apps.shehryar.com.cricketscroingappPro.Ranking.TeamRankingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.adcolony.sdk.AdColonyInterstitialActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <provider android:name="com.crashlytics.android.CrashlyticsInitProvider" android:exported="false" android:authorities="apps.shehryar.com.cricketscroingapp.crashlyticsinitprovider" android:initOrder="90"/>
+        <activity android:name="com.facebook.ads.AudienceNetworkActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="apps.shehryar.com.cricketscroingapp"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false"/>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="apps.shehryar.com.cricketscroingapp.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:theme="@style/Theme.IAPTheme" android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    </application>
+</manifest>

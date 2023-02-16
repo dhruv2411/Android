@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="44dp" android:text="TextView" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/heading_text"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_contianer" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_title"/>
+</android.support.constraint.ConstraintLayout>

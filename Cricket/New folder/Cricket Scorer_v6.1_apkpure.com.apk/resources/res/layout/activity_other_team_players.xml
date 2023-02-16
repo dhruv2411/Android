@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_your_team_details" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+        <TextView android:textSize="13sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Players with " android:fontFamily="@font/open_sans_regular"/>
+        <ImageView android:background="@drawable/ic_checked" android:layout_width="13dp" android:layout_height="13dp"/>
+        <TextView android:textSize="13sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" are the part of Playing XI"/>
+    </LinearLayout>
+    <TextView android:textColor="@android:color/black" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Tap any player to add to PlayingXI" android:fontFamily="sans-serif-condensed"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:padding="5dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textAppearance="@style/TextAppearance.Material.Title" android:textSize="25sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/tv_team_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="Team Players" android:singleLine="true" android:fontFamily="sans-serif-condensed"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView android:id="@+id/players_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                <TextView android:layout_gravity="center" android:id="@+id/tv_no_player_added" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Players Added"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/bAddNewPlayer" android:background="@drawable/buttonstyling_selector" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:text="Add a New Player"/>
+        <Button android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/bupdatedetails" android:background="@drawable/buttonstyling_selector" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:text="ADD TEAM"/>
+    </LinearLayout>
+</LinearLayout>
