@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
-    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_normal" android:layout_weight="1">
-        <Button android:id="@+id/btn_choose_stages" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal" android:layout_marginBottom="@dimen/margin_normal" android:text="@string/choose_tournament_stages" android:onClick="onClick" style="@style/rounded_button_green"/>
-        <android.support.design.widget.TabLayout android:layout_gravity="bottom" android:id="@+id/tablayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/tealdark" app:tabBackground="@drawable/tab_layout_color_selector" app:tabMode="0"/>
-        <android.support.v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
-        <com.google.android.gms.ads.AdView android:id="@+id/batsmanDetailAd" android:layout_width="match_parent" android:layout_height="wrap_content" app:adSize="BANNER" app:adUnitId="ca-app-pub-7751307421283386/7238448152"/>
-    </LinearLayout>
-</LinearLayout>

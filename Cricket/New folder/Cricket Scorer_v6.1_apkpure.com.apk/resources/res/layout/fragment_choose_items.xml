@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background" android:padding="@dimen/margin_large" android:layout_width="match_parent" android:layout_height="match_parent">
-    <TextView android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:text="@string/hello_blank_fragment" style="@style/title"/>
-    <android.support.v7.widget.RecyclerView android:id="@+id/rv_options" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_normal" android:layout_weight="1"/>
-    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <Button android:layout_gravity="right" android:id="@+id/btn_cancel" android:layout_width="wrap_content" android:layout_marginTop="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal" android:text="@string/cancel" style="@style/rounded_button_green"/>
-        <Button android:layout_gravity="right" android:id="@+id/btn_ok" android:layout_width="wrap_content" android:layout_marginTop="@dimen/margin_normal" android:text="@string/ok" style="@style/rounded_button_green"/>
-    </LinearLayout>
-</LinearLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
-    <item android:state_enabled="true">
-        <shape android:padding="10dp" android:shape="rectangle">
-            <gradient android:startColor="@color/tealdark" android:endColor="@color/tealdark" android:type="linear" android:centerColor="@color/tealdark"/>
-            <corners android:topLeftRadius="4dp" android:topRightRadius="4dp" android:bottomLeftRadius="4dp" android:bottomRightRadius="4dp"/>
-        </shape>
-    </item>
-</selector>

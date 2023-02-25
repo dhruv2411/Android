@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/roundedgebackground" android:layout_width="match_parent" android:layout_height="match_parent">
-    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:background="@color/teal" android:layout_width="match_parent" android:layout_height="40dp" android:text="RETIRED"/>
-    <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/textInputlayoutStyle">
-        <AutoCompleteTextView android:id="@+id/retirededbatname" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:hint="New Batsman Name" android:inputType="textCapWords" android:dropDownHeight="100dp" style="@style/my_edit_text_style"/>
-    </android.support.design.widget.TextInputLayout>
-    <Button android:textColor="@color/white" android:id="@+id/retired_dialog_go_next" android:background="@drawable/buttonstyling_selector" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="Next"/>
-</LinearLayout>

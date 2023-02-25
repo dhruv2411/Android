@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
-    <item android:id="@+id/changeBowlerHurted" android:title="Bowler Hurted"/>
-    <item android:id="@+id/mretiredhurt" android:title="Batsman Retired Hurt"/>
-    <item android:id="@+id/changeMatchDetails" android:title="Change Match Details"/>
-    <item android:id="@+id/changeBatsmanMenu" android:title="Change Batsman"/>
-    <item android:id="@+id/changeBowlerMenu" android:title="Change Bowler"/>
-</menu>
