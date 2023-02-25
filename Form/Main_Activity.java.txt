@@ -1,0 +1,56 @@
+import android.os.Bundle;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+public class MainActivity extends AppCompatActivity {
+    EditText username,password,email,phone,country,state,birthday,birthTime;
+    RadioGroup radioGroup;
+    RadioButton radioButton;
+    Button submit;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        username = findViewById(R.id.username);
+        password = findViewById(R.id.password);
+        email = findViewById(R.id.email);
+        phone = findViewById(R.id.phone);
+        country = findViewById(R.id.country);
+        state = findViewById(R.id.state);
+        birthday = findViewById(R.id.birthday);
+        birthTime = findViewById(R.id.birthtime);
+        radioGroup = findViewById(R.id.radio_group);
+        submit = findViewById(R.id.button);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayData();
+            }
+        });
+    }
+    public void displayData(){
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("Username : "+username.getText().toString()+"\n");
+        stringBuffer.append("Password : "+password.getText().toString()+"\n");
+        stringBuffer.append("E-mail : "+email.getText().toString()+"\n");
+        stringBuffer.append("Phone : "+phone.getText().toString()+"\n");
+        stringBuffer.append("Country : "+country.getText().toString()+"\n");
+        stringBuffer.append("State : "+state.getText().toString()+"\n");
+        stringBuffer.append("Gender : "+radioButton.getText().toString()+"\n");
+        stringBuffer.append("Birthday : "+birthday.getText().toString()+"\n");
+        stringBuffer.append("BirthTime : "+birthTime.getText().toString()+"\n\n");
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle("StudentsData");
+        builder.setMessage(stringBuffer.toString());
+        builder.show();
+    }
+    public void radio_checked(View view){
+        int radio_id = radioGroup.getCheckedRadioButtonId();
+        radioButton = findViewById(radio_id);
+    }
+}
